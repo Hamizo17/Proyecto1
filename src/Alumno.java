@@ -15,6 +15,7 @@ public class Alumno extends Persona {
 		this.notas=notas;
 		this.ciclo=ciclo;
 		
+		
 	}
 
 	
