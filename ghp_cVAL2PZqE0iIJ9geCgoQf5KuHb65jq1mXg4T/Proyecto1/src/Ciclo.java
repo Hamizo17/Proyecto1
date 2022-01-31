@@ -1,12 +1,13 @@
 
 public class Ciclo {
 	
-	private int id_ciclo;
+	
 	private String nombre_ciclo;
+	private Grupo nombre_grupo;
 	 
-		public Ciclo(int id_cic, String b ) {
+		public Ciclo(Grupo nom, String b ) {
 		
-				this.id_ciclo=id_cic;
+				this.nombre_grupo=nom;
 				this.nombre_ciclo=b;
 		
 	}

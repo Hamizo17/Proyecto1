@@ -1,13 +1,14 @@
 
 public class Notas {
 	
-	private int evaluacion;
-	private Modulo id_mod;
+	private String [] evaluacion=new String[4];
+	private String  nombre_mod;
 	
-	public Notas(Modulo id_mod, int evalu) {
+	public Notas(String id_mod, String [] evalu) {
 		
 		this.evaluacion=evalu;
-		this.id_mod=id_mod;
+		this.nombre_mod=id_mod;
+		
 		
 	}
 
