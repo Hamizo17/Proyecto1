@@ -1,13 +1,20 @@
 
 public class Alumno extends Persona {
 
+	private String dni;
+	private String nombre;
+	private String apellido;
 	private Ciclo ciclo;
 	private Notas notas;
 	
 	public Alumno(String dni, String nombre, String apellido, Ciclo ciclo, Notas notas) {
-		super(dni, nombre, apellido);
+
+		this.dni=dni;
+		this.nombre=nombre;
+		this.apellido=apellido;
 		this.notas=notas;
 		this.ciclo=ciclo;
+		
 	}
 
 	
