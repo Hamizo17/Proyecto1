@@ -5,7 +5,8 @@ public class Grupo {
 	
 	public Grupo(int id) {
 		
-		this.id_grupo=id;
+		this.id_grupo=id; 
+		
 	}
 	  
 }

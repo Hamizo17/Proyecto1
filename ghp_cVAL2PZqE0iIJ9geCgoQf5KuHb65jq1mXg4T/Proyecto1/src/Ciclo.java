@@ -3,11 +3,11 @@ public class Ciclo {
 	
 	
 	private String nombre_ciclo;
-	private Grupo nombre_grupo;
+	private Grupo[]id_grupos;
 	 
-		public Ciclo(Grupo nom, String b ) {
+		public Ciclo(Grupo [] nom, String b ) {
 		
-				this.nombre_grupo=nom;
+				this.id_grupos=nom;
 				this.nombre_ciclo=b;
 		
 	}
