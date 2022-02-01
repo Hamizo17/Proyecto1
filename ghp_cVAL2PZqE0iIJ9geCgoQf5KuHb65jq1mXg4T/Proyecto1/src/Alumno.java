@@ -2,23 +2,22 @@
 public class Alumno {
 	
 
-		private Grupo id_grupo;
+		private Grupo grupo;
 		private String dni;
 		private String nombre;
 		private String apellido;
 		private Ciclo ciclo;
-		private Nota[] notas;
+		private Nota [] notas;
 	
-		public Alumno(String dni, String nombre, String apellido, Ciclo ciclo, Nota [] notas, Grupo id_group) {
+		public Alumno(String dni, String nombre, String apellido, Ciclo ciclo, Grupo group) {
 	
 			this.dni=dni;
 			this.nombre=nombre;
 			this.apellido=apellido;
-			this.notas=notas;
 			this.ciclo=ciclo;
-			this.id_grupo=id_group;
+			this.grupo=group;
 	
-				
+			
 				
 			}
 		public String toString() {
@@ -26,6 +25,15 @@ public class Alumno {
 			return "El nombre del alumno es " + this.nombre + this.apellido + " con dni " + this.dni;
 			
 		}
+		public String  getnotas()  {
+			
+			
+			return "La nota de la evaluacion " + notas.getevalu() + " ,de la asignatura " 
+			+ notas.getmodulo() + " ,es " + notas.getnotas();
+			
+		}
 
 
 }
+
+

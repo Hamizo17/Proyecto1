@@ -12,5 +12,8 @@ public class Modulo {
 			
 			
 		}
-
+		
+		public String getnombre() {
+			 return this.nombre_modulo;
+		}
 }

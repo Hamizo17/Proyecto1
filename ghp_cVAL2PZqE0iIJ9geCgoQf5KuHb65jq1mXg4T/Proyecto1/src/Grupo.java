@@ -1,11 +1,11 @@
 
 public class Grupo {
 	  
-	private int id_grupo;
+	private String []  grupos;
 	
-	public Grupo(int id) {
+	public Grupo(String [] grupos) {
 		
-		this.id_grupo=id; 
+		this.grupos=grupos; 
 		
 	}
 	  
