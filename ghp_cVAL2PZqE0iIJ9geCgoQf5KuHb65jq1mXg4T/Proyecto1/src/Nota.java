@@ -1,13 +1,13 @@
 
 public class Nota {
 	
-	private double [] nota;
+	private double [] nota ;
 	private int evaluacion;
 	private Modulo modulo;
 	
-	public Nota(double [] nota, int evalu, Modulo modulo) {
+	public Nota( int evalu, Modulo modulo, double [] arraynotas) {
 		
-		this.nota=nota;
+		this.nota[]=new [5];
 		this.evaluacion=evalu;
 		this.modulo=modulo;
 		
@@ -19,6 +19,11 @@ public class Nota {
 		return  this.nota[a-1] ;
 		
 	}
+	public double [] getnotas(){
+			
+			return  this.nota ;
+			
+		}
 	
 	public int getevalu(){
 		
@@ -30,7 +35,25 @@ public class Nota {
 	
 	return  modulo.getnombre();
 	
-}
+	} 
+	public void crearnotas( double [] arraynotas) {
+		
+
+			
+			this.nota=arraynotas;
+			
+		}
 	
+	
+	public String mostrarnotas() {
+		
+			String devolver = "";
+			
+		 for(int i=0;i<this.nota.length;i++) {
+			 devolver += "Nota " + i + " es " + nota[i];
+		}
+		 
+		 return devolver;
+	}
 
 }

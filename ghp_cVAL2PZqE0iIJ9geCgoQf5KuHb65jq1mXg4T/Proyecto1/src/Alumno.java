@@ -7,15 +7,16 @@ public class Alumno {
 		private String nombre;
 		private String apellido;
 		private Ciclo ciclo;
-		private Nota [] notas;
+		private Nota  notas;
 	
-		public Alumno(String dni, String nombre, String apellido, Ciclo ciclo, Grupo group) {
+		public Alumno(String dni, String nombre, String apellido,  Ciclo ciclo, Grupo group) {
 	
 			this.dni=dni;
 			this.nombre=nombre;
 			this.apellido=apellido;
 			this.ciclo=ciclo;
 			this.grupo=group;
+			
 	
 			
 				
@@ -29,10 +30,15 @@ public class Alumno {
 			
 			
 			return "La nota de la evaluacion " + notas.getevalu() + " ,de la asignatura " 
-			+ notas.getmodulo() + " ,es " + notas.getnotas();
+			+ notas.getmodulo() + " ,es " + notas.mostrarnotas();
 			
 		}
-
+		
+		public void setnotas(Nota notas){
+			
+			this.notas=notas;
+		}
+		
 
 }
 
